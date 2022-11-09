@@ -13,6 +13,11 @@
                 社員番号かパスワードが間違っています。
             </div>
         </c:if>
+        <c:if test="${flush != null}">
+            <div id="flush_success">
+                <c:out value="${flush}" />
+            </div>
+        </c:if>
         <h2>ログイン</h2>
         <form method="POST" action="<c:url value='/?action=${action}&command=${command}' />">
             <label for="${AttributeConst.EMP_CODE.getValue()}">社員番号</label><br />
