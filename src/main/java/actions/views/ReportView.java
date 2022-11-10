@@ -31,7 +31,7 @@ public class ReportView {
     /**
      * いつの日報かを示す日付
      */
-    private LocalDate ReportDate;
+    private LocalDate reportDate;
 
     /**
      * 日報のタイトル
